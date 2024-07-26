@@ -1,6 +1,36 @@
-<div *ngFor="let data of researchData" class="research-card">
-    <img [src]="data.imageUrl" alt="{{data.title}}">
-    <h3>{{data.title}}</h3>
-    <p>{{data.content}}</p>
-  </div>
+<!-- src/app/components/qualitative-research/qualitative-research.component.html -->
+<div class="qualitative-research">
+  <h1>Qualitative Research Findings</h1>
   
+  <section class="case-study">
+    <h2>Case Study 1: Impact of Remote Work</h2>
+    <img src="https://via.placeholder.com/600x400" alt="Remote Work">
+    <p>
+      Remote work has significantly impacted the productivity and well-being of employees. According to our research, 70% of respondents reported higher productivity levels when working from home.
+    </p>
+    <blockquote>
+      "Working from home has allowed me to balance my personal and professional life better. I feel more productive and less stressed." - John Doe
+    </blockquote>
+  </section>
+  
+  <section class="case-study">
+    <h2>Case Study 2: Adoption of Digital Tools</h2>
+    <img src="https://via.placeholder.com/600x400" alt="Digital Tools">
+    <p>
+      The adoption of digital tools has accelerated during the pandemic. Our research shows that 80% of companies have implemented new digital tools to facilitate remote work.
+    </p>
+    <blockquote>
+      "Digital tools have revolutionized the way we work. Communication and collaboration have become much more efficient." - Jane Smith
+    </blockquote>
+  </section>
+  
+  <section class="summary">
+    <h2>Summary of Insights</h2>
+    <ul>
+      <li>70% of respondents report higher productivity levels when working from home.</li>
+      <li>80% of companies have implemented new digital tools to facilitate remote work.</li>
+      <li>Employees feel more productive and less stressed working from home.</li>
+      <li>Digital tools have improved communication and collaboration.</li>
+    </ul>
+  </section>
+</div>
