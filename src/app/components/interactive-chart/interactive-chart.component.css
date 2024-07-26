@@ -1,0 +1,35 @@
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust spacing between charts */
+  align-items: flex-start; /* Align items at the start */
+  gap: 20px; /* Space between charts */
+}
+
+ngx-charts-bar-vertical, ngx-charts-line-chart, ngx-charts-pie-chart {
+  flex: 1 1 calc(33.333% - 20px); /* Adjust width based on screen size */
+  min-width: 300px; /* Minimum width to maintain usability */
+  max-width: 700px; /* Maximum width to prevent too large */
+  margin: 0; /* Remove margin to use gap */
+  box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}
+
+.chart {
+  border: 2px solid blue;
+  border-radius: 8px; /* Optional: Rounded corners for a modern look */
+  padding: 10px; /* Optional: Add padding inside the chart */
+  background-color: #fff; /* Optional: Background color for charts */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  ngx-charts-bar-vertical, ngx-charts-line-chart, ngx-charts-pie-chart {
+    flex: 1 1 calc(50% - 20px); /* Two charts per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  ngx-charts-bar-vertical, ngx-charts-line-chart, ngx-charts-pie-chart {
+    flex: 1 1 100%; /* One chart per row on small screens */
+  }
+}
